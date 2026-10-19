@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eclipse TV</title>
+<link rel="stylesheet" href="player.css?v=3">
+</head>
+<body>
+<div id="stage"></div>
+<div id="idle">
+  <div class="ring"></div>
+  <div class="word">ECLIPSE<span>TV</span></div>
+  <div class="clock" id="clock">--:--</div>
+  <div class="hint">Sin senal · usa la tele para poner algo</div>
+</div>
+<div id="kar">
+  <div class="badge">KARAOKE</div>
+  <div class="song" id="kSong"></div>
+  <div class="lines"><div class="l prev" id="kPrev"></div><div class="l cur" id="kCur"><span id="kCurT"></span></div><div class="l next" id="kNext"></div></div>
+</div>
+<canvas id="ghCanvas" width="1280" height="720"></canvas>
+<div id="strip"><b id="sTitle"></b><span id="sAuthor"></span></div>
+<script src="player.js?v=3"></script>
+<script src="game.js?v=3"></script>
+</body>
+</html>
